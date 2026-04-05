@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Hallow Games | Coming Soon</title>
+    <style>
+        /* 1. Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* Prevents scrolling on a simple landing page */
+        }
+
+        /* 2. Background Landscape */
+        .background-container {
+            background-image: url('landscape-background.jpg'); /* Replace with your saved background filename */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* 3. The Badge (Logo) */
+        .badge-logo {
+            width: 90%; /* Mobile first: takes up most of the width */
+            max-width: 600px; /* Limits size on desktop so it's not overwhelming */
+            height: auto;
+            display: block;
+            /* Optional: Subtle glow to match the pixel aesthetic */
+            filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.3));
+            transition: transform 0.3s ease;
+        }
+
+        /* Simple hover effect for a bit of "gamey" feel */
+        .badge-logo:hover {
+            transform: scale(1.05);
+        }
+
+        /* 4. Responsive Adjustments */
+        @media (max-width: 600px) {
+            .badge-logo {
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background-container">
+        <img src="pixel-hallow-badge.png" alt="Pixel Hallow Games Logo" class="badge-logo">
+    </div>
+
+</body>
+</html>
